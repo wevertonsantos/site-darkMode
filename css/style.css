@@ -3,19 +3,18 @@ body {
 }
 
 #hero{
-    background-color: white;
+    background: linear-gradient(30deg, rgba(249, 249, 249, 0.96),grey 300%);
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-.texto{
+.header{
     font-weight: bolder;
     height: 50px;
     grid-column-start: 1;
     grid-column-end: 4;
-    text-shadow: 1px 2px 2px white;
     text-align: center;
     color: green;
     font-size: 2.5em;
@@ -23,10 +22,6 @@ body {
 }
 
 @media (max-width: 700px){
-    .texto {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
 }
 
 .shoes{
@@ -47,7 +42,7 @@ body {
     font-size: 3em;
 }
 
-img{
+.imgDunk{
     position:relative;
     right: 40px;
     bottom: 80px;
@@ -66,9 +61,9 @@ img{
 }
 
 .painel{
-    animation: borderAlter 10s ease-in-out alternate infinite;
+    animation: borderAlter 2s ease-in-out alternate infinite;
     border-radius: 5px 5px 5px 5px;
-    border: 4px outset greenyellow;
+    border: 3px outset greenyellow;
     text-align: center;
     margin-top: 20px;
     grid-column-start: 2;
@@ -77,17 +72,17 @@ img{
     grid-row-end: 3;
     width: 500px;
     height: 500px;
-    background-color: rgba(105, 161, 107, 1);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 @keyframes borderAlter{
     from{
-        border-top: 4px outset green;
-        border-right: 4px outset green;
+        border-top: 3px outset green;
+        border-bottom: 3px outset green;
     }
     to{
-        border-bottom:  4px outset green;
-        border-left:  4px outset green
+        border-right: 3px outset green;
+        border-left: 3px outset green
     }
 }
 
@@ -95,23 +90,48 @@ img{
     font-weight: bolder;
     position: relative;
     top: 150px;
-    color: white;
+    color: green;
     font-size: 2em;
 }
 
-#btn {
-    border: 1px solid white;
-    position: relative;
-    top: 150px;
-    height: 50px;
-    width: 90px;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0);
+.toggle{
+    display: none;
 }
 
-#btn .mod{
-    height: 30px;
-    width: 30px;
-    background-color: white;
+.toggle + label{
+    top: 140px;
+    left: 210px;
+    width: 60px;
+    height: 20px;
+    background: green;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    padding: 12px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.toggle + label::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: block;
     border-radius: 50%;
+    right: unset;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+}
+
+.toggle:checked + label{
+    background: rgba(31, 31, 31, 1);
+}
+
+.toggle:checked + label:before{
+    content: '';
+    left: calc(100% - 42px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
 }
