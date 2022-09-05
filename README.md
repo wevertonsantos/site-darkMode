@@ -10,4 +10,4 @@
 
 <h2> < Vídeo > <h2>
 
-![Vídeo](https://github.com/wevertonsantos/site-darkMode/blob/main/Screen%20Recording%20(05-09-2022%2012-10-19).wmv)
+[Vídeo](https://github.com/wevertonsantos/site-darkMode/blob/main/Screen%20Recording%20(05-09-2022%2012-10-19).wmv)
