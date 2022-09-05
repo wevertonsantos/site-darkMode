@@ -2,11 +2,11 @@
 
 <h2> < Modo White > <h2>
 
-![alt-text](https://github.com/wevertonsantos/site-darkMode/blob/main/mododark.PNG)
+![alt-text](https://github.com/wevertonsantos/site-darkMode/blob/main/modowhite.PNG)
 
 <h2> < Modo Dark > <h2>
 
-![alt-text](https://github.com/wevertonsantos/site-darkMode/blob/main/modowhite.PNG)
+![alt-text](https://github.com/wevertonsantos/site-darkMode/blob/main/mododark.PNG)
 
 <h2> < Vídeo > <h2>
 
