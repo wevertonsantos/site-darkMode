@@ -1,9 +1,9 @@
 body {
     margin: 0; box-sizing: border-box; padding: 0; font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(30deg, rgba(249, 249, 249, 0.96),grey 300%);
 }
 
 #hero{
-    background: linear-gradient(30deg, rgba(249, 249, 249, 0.96),grey 300%);
     width: 100%;
     height: 100vh;
     display: grid;
@@ -16,9 +16,17 @@ body {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    color: green;
     font-size: 2.5em;
     width: 100%;
+}
+
+.header .txtTopo{
+    color: green;
+}
+
+.header .txtTopo2{
+    display: none;
+    color: white;
 }
 
 @media (max-width: 700px){
@@ -40,27 +48,38 @@ body {
     font-weight: bolder;
     color: green;
     font-size: 3em;
+    padding-bottom: 50px;
 }
 
+
 .imgDunk{
-    position:relative;
-    right: 40px;
-    bottom: 80px;
     animation: dunkRotate 2s ease-in-out infinite alternate;
-    width: 500px;
+    position:relative;
+    bottom: 100px;
+    width: 550px;
     height: 350px;
+}
+
+.imgDunk2{
+    display: none;
+    position:relative;
+    bottom: 250px;
+    animation: dunkRotate 2s ease-in-out infinite alternate;
+    width: 550px;
+    height: 650px;
 }
 
 @keyframes dunkRotate{
     from{
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
     }
     to{
-        transform: rotate(-40deg);
+        transform: rotate(-20deg);
     }
 }
 
 .painel{
+    color: green;
     animation: borderAlter 2s ease-in-out alternate infinite;
     border-radius: 5px 5px 5px 5px;
     border: 3px outset greenyellow;
@@ -94,44 +113,71 @@ body {
     font-size: 2em;
 }
 
-.toggle{
+input[type="checkbox"]{
     display: none;
 }
 
-.toggle + label{
-    top: 140px;
-    left: 210px;
-    width: 60px;
-    height: 20px;
-    background: green;
-    display: block;
+i{
     position: relative;
-    border-radius: 20px;
-    padding: 12px;
-    transition: 500ms;
+    top: 200px;
     cursor: pointer;
+    font-size: 6em;
 }
 
-.toggle + label::before{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: white;
+.fa-sun{
+    display: none;
+}
+
+
+/* Dark Theme */
+
+.dark{
+    background: linear-gradient(30deg, rgb(14, 18, 53), grey 200%);
+}
+
+.dark .painel{
+    color: white;
+    animation: borderAlter2 2s ease-in-out alternate infinite;
+    border: 3px outset rgb(60, 60, 60);
+}
+
+.dark .fa-moon{
+    display: none;
+}
+
+.dark .fa-sun{
     display: block;
-    border-radius: 50%;
-    right: unset;
-    left: 2px;
-    top: 2px;
-    transition: 200ms;
 }
 
-.toggle:checked + label{
-    background: rgba(31, 31, 31, 1);
+.dark .txtTopo{
+    display: none;
 }
 
-.toggle:checked + label:before{
-    content: '';
-    left: calc(100% - 42px);
-    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+.dark .txtTopo2{
+    display: block;
+}
+
+.dark .imgDunk{
+    display: none;
+}
+
+.dark .imgDunk2{
+    display: block;
+}
+
+
+@keyframes borderAlter2{
+    from{
+        border-top: 3px outset white;
+        border-bottom: 3px outset white
+    }
+    to{
+        border-right: 3px outset white;
+        border-left: 3px outset white
+    }
+}
+
+.dark .txtImg,
+.dark .txtPainel{ 
+    color: white;
 }

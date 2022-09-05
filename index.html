@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Dark Mode</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
@@ -13,22 +17,27 @@
     <link rel='stylesheet' href="/css/style.css">
    
 </head>
-<body>
+<body class="dark">
     
     <div id="hero">
         <div class="header">
             <p class="txtTopo">Modo White</p>
+            <p class="txtTopo2">Modo Dark</p>
         </div>
 
         <div class="shoes">
                 <p class="txtImg">Dunk Low</p>
                 <img class='imgDunk' src="/img/dunkgreen.png">
+                <img class='imgDunk2' src="/img/dunkblackwhit.png">
         </div>
 
         <div class="painel">
-            <p class="txtPainel">Clique no botão e <br> altere o modo</p>
-            <input id="toggle" class="toggle" type="checkbox"></input>
-            <label for="toggle"></label>
+            <p class="txtPainel">Clique no botão e <br> altere o tema</p>
+            <input id="change" name="change" type="checkbox"></input>
+            <label for="change">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
         </div>
     </div>
     
