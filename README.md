@@ -1,6 +1,6 @@
 <h1> Criação de site utilizando HTML, CSS e JS </h1>
 
-<h3> Link do linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6974105206032601088/ </h3>
+<h3> https://wevertonsantos.github.io/site-darkMode/ </h3>
 
 <h1> Utilizado no projeto: </h1>
 <ul>
